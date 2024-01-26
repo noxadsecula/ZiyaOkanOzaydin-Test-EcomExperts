@@ -25,6 +25,8 @@
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
+
+
 <cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link">
@@ -450,6 +452,9 @@
   </div>
 </cart-items>
 
+
+{% comment %} Provoke removing eventlistener {% endcomment %}
+<script src="{{ 'custom-delete_from_cart.js' | asset_url }}" defer="defer"></script>
 {% schema %}
 {
   "name": "t:sections.main-cart-items.name",
