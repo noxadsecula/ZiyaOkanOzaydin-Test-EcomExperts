@@ -1465,5 +1465,45 @@
         "default": "background-1"
       }
     ]
+  },
+  {
+    "name": "t:settings_schema.product.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "size_variant",
+        "label": "Size",
+        "options": [
+          {
+            "value": "",
+            "label": "Select a size"
+          },
+          {
+            "value": "xs",
+            "label": "X-small"
+          },
+          {
+            "value": "s",
+            "label": "Small"
+          },
+          {
+            "value": "m",
+            "label": "Medium"
+          },
+          {
+            "value": "l",
+            "label": "Large"
+          },
+          {
+            "value": "xl",
+            "label": "X-large"
+          },
+          {
+            "value": "xxl",
+            "label": "XX-large"
+          }
+        ]
+      }
+    ]
   }
 ]

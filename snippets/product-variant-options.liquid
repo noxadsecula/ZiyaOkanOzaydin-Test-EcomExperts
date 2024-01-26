@@ -23,7 +23,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 
-{%- for value in option.values -%}
+ {%- for value in option.values -%}
   {%- liquid
     assign option_disabled = true
 
@@ -47,7 +47,7 @@
 
   {%- if block.settings.picker_type == 'button' -%}
     <input
-      type="radio"
+      type="dropdown"
       id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
       name="{{ option.name }}"
       value="{{ value | escape }}"
@@ -77,4 +77,5 @@
       {%- endif %}
     </option>
   {%- endif -%}
-{%- endfor -%}
+{%- endfor -%} 
+

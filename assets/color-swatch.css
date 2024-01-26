@@ -1,0 +1,5 @@
+.product-form__input input[type=radio]:checked+label{
+    border-block-start-color: white !important;
+    box-shadow: inset 0 0 0 2px #fff !important;
+    border-color: black !important;
+}
